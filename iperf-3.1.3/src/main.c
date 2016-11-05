@@ -164,7 +164,7 @@ run(struct iperf_test *test)
 	    iperf_delete_pidfile(test);
             break;
 	case 'c':
-	    if (iperf_run_client(test) < 0)
+	    if (iperf_run_client(test) < 0)                    //¿Í»§¶Ë 
 		iperf_errexit(test, "error - %s", iperf_strerror(i_errno));
             break;
         default:
